@@ -38,7 +38,7 @@ async def on_message(message):
 	
 
 
-  voting_channel_object = bot.get_server(server_id).get_channel(voting_channel_id)
+	voting_channel_object = bot.get_server(server_id).get_channel(voting_channel_id)
 
 
 	message_command = message.content.strip().lower()
