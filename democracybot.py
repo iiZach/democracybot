@@ -21,7 +21,7 @@ storage_channel_id = "478358905240551424"
 
 admin_role_ids = ["478605537362182145"]
 
-maximum_bills_per_member = 2
+maximum_bills_per_member = 1
 bill_duration = 20		#in seconds
 voting_roles_dict = {"477082018031861762": 1, "477082082007318528": 1.5, "477082152819752971": 2}		#edit role IDs and voting power here. format is:   "role_id": voting_power   (each one is separated by a comma)
 
