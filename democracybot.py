@@ -10,11 +10,11 @@ import json
 token = "TOKEN"
 
 
-server_id = "474307455837536286"
+server_id = "468124255545196545"
 
 commands_channel_id = "474307489542963201"
-voting_channel_id = "474325498994884610"
-results_channel_id = "474325530884177920"
+voting_channel_id = "478700629590802442"
+results_channel_id = "474000090290323456"
 
 storage_server_id = "478225989785223177"
 storage_channel_id = "478358905240551424"
