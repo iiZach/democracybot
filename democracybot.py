@@ -12,7 +12,6 @@ token = "TOKEN"
 
 server_id = "468124255545196545"
 
-commands_channel_id = "474307489542963201"
 voting_channel_id = "478700629590802442"
 results_channel_id = "474000090290323456"
 
