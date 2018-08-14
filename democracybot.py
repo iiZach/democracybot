@@ -175,15 +175,6 @@ async def on_message(message):
 
 
 
-		if (message_command[:12] == "!list roles ") or (message_command == "!list roles"):
-			list_sender = ""
-			for role_object in message.server.roles:
-				if not (role_object.is_everyone):
-					list_sender = list_sender + "\n{0} ({1})".format(role_object.name, role_object.id)
-			await bot.send_message(message.channel, list_sender)
-
-
-
 		elif (message_command[:12] == "!start vote ") or (message_command == "!start vote"):
 
 			if not (message.author.id in votes_awaiting_confirmation):
@@ -354,18 +345,13 @@ async def on_message(message):
 
 
 
-		elif (message_command[:12] == "!list roles ") or (message_command == "!list roles"):
-			list_sender = ""
-			for role_object in message.server.roles:
-				if not (role_object.is_everyone):
-					list_sender = list_sender + "\n{0} ({1})".format(role_object.name, role_object.id)
-			await bot.send_message(message.channel, list_sender)
-
-
-
 		elif (message_command[:6] == "!help ") or (message_command == "!help"):
-			embed=discord.Embed(title="Current commands:", color=0x2f25e9)
-			embed.add_field(name="!start vote *[bill]*", value="Starts a vote", inline=False)
+			embed=discord.Embed(title="__**Commands:**__", color=0x2f25e9)
+			embed.add_field(name="```!start vote [bill]```", value="Starts a vote", inline=False)
+			embed.add_field(name="```!vote aye [bill number]```", value="Adds an aye vote to the bill number chosen", inline=False)
+			embed.add_field(name="```!vote nay [bill number]```", value="Adds an nay vote to the bill number chosen", inline=False)
+			embed.add_field(name="```!bills```", value="Displays the current bills that you can vote on", inline=False)
+			embed.add_field(name="```!status [bill number]```", value="Displays the amount of ayes and nays currently on the bill number chosen", inline=False)
 			await bot.send_message(message.channel, embed=embed)
 
 
