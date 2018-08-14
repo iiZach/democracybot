@@ -23,7 +23,12 @@ admin_role_ids = ["468125812399407106"]
 
 maximum_bills_per_member = 1
 bill_duration = 3600		#in seconds
-voting_roles_dict = {"473953640382726144": 1, "473950175279185940": 1.25, "473950263229546496": 1.5, "473950359577034778": 2.5, "474645800761163778": 2, "474645400574492682": 3}		#edit role IDs and voting power here. format is:   "role_id": voting_power   (each one is separated by a comma)
+voting_roles_dict = {"473953640382726144": 1,		#edit role IDs and voting power here. format is:   "role_id": voting_power   (each one is separated by a comma)
+		     "473950175279185940": 1.25, 
+		     "473950263229546496": 1.5, 
+		     "473950359577034778": 2.5, 
+		     "474645800761163778": 2, 
+		     "474645400574492682": 3}		
 
 
 
