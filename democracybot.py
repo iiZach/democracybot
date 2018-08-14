@@ -333,10 +333,10 @@ async def on_message(message):
 					
 		elif (message_command[:7] == "!bills ") or (message_command == "!bills"):
 			if len(current_bills) > 0:
-				list_sender = "__**Current Bills**__"
+				list_sender = "__**Current Bills**__\n"
 				for bill_number in current_bills:
 					current_bill = current_bills[bill_number]
-					list_sender = list_sender + "\n\n[{0}] Bill by {1}: \n```{2}```".format(str(bill_number), current_bill["member_name"], current_bill["bill"])
+					list_sender = list_sender + "\n[{0}] Bill by {1}: \n```{2}```".format(str(bill_number), current_bill["member_name"], current_bill["bill"])
 				await bot.send_message(message.channel, list_sender)
 			else:
 				await bot.send_message(message.channel, "There are currently no bills!")
