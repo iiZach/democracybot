@@ -330,6 +330,11 @@ async def on_message(message):
 					await bot.send_message(message.channel, list_sender)
 
 
+					
+		elif (message_command[:7] == "!bills ") or (message_command == "!bills"):
+			
+					
+					
 
 		elif (message_command[:8] == "!status ") or (message_command == "!status"):
 			if not (message_command == "!status"):
