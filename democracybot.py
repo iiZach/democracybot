@@ -331,7 +331,7 @@ async def on_message(message):
 
 
 					
-		elif (message_command[:7] == "!bills ") or (message_command == "!bills"):
+		#elif (message_command[:7] == "!bills ") or (message_command == "!bills"):
 			
 					
 					
