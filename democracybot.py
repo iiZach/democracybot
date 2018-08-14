@@ -331,8 +331,11 @@ async def on_message(message):
 
 
 					
-		#elif (message_command[:7] == "!bills ") or (message_command == "!bills"):
-			
+		elif (message_command[:7] == "!bills ") or (message_command == "!bills"):
+			if len(current_bills) > 0:
+				pass
+			else:
+				await bot.send_message(message.channel, "There are currently no bills!")
 					
 					
 
